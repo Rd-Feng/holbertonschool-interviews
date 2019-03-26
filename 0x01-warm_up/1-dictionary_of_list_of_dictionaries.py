@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """fetch all todos grouped by users
 """
-import requests
 import json
+import requests
 
 res = {}
 users = requests.get('https://jsonplaceholder.typicode.com/users').json()
