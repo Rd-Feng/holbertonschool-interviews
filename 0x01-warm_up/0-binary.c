@@ -18,10 +18,10 @@ int binary_search(int *array, size_t size, int value)
 		n = (l + r) / 2;
 		if (array[n] == value)
 			return (n);
-		else if (array[n] < value)
+		if (array[n] < value)
 			l = n + 1;
 		else
-			r = n - 1;
+			r = n;
 	}
 	return (-1);
 }
